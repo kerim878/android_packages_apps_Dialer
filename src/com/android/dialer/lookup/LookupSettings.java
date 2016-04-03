@@ -43,7 +43,6 @@ public final class LookupSettings {
     public static final String RLP_YELLOWPAGES = "YellowPages";
     public static final String RLP_YELLOWPAGES_CA = "YellowPages_CA";
     public static final String RLP_ZABASEARCH = "ZabaSearch";
-    public static final String RLP_CYNGN_CHINESE = "CyngnChinese";
     public static final String RLP_DASTELEFONBUCH = "DasTelefonbuch";
     public static final String RLP_GEBELD = "Gebeld";
     public static final String RLP_AUSKUNFT = "Auskunft";

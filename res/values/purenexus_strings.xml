@@ -32,11 +32,6 @@
     <string name="people_lookup_provider_title">People lookup provider</string>
     <string name="reverse_lookup_provider_title">Reverse lookup provider</string>
 
-    <!-- Chinese Reverse Lookup Provider -->
-    <string name="cyngn_reverse_lookup_provider_package" translatable="false">com.cyngn.chineselocationlookup</string>
-    <string name="cyngn_reverse_lookup_provider_name">Cyngn Chinese (CN)</string>
-    <string name="cyngn_reverse_lookup_provider_value" translatable="false">CyngnChinese</string>
-
     <!-- Description for incoming calls that were blacklisted -->
     <string name="type_blacklist">Blacklisted call</string>
     <string name="menu_add_to_blacklist">Add to blocked caller list</string>
