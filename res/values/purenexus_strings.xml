@@ -31,10 +31,4 @@
     <string name="forward_lookup_provider_title">Forward lookup provider</string>
     <string name="people_lookup_provider_title">People lookup provider</string>
     <string name="reverse_lookup_provider_title">Reverse lookup provider</string>
-
-    <!-- Chinese Reverse Lookup Provider -->
-    <string name="cyngn_reverse_lookup_provider_package" translatable="false">com.cyngn.chineselocationlookup</string>
-    <string name="cyngn_reverse_lookup_provider_name">Cyngn Chinese (CN)</string>
-    <string name="cyngn_reverse_lookup_provider_value" translatable="false">CyngnChinese</string>
-
 </resources>
