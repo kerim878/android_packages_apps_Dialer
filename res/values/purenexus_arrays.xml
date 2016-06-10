@@ -59,4 +59,25 @@
         <item>ZabaSearch (US)</item>
     </string-array>
 
+    <!-- Proximity speaker delay entries. -->
+    <string-array name="proximity_delay_entries" translatable="false">
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+    </string-array>
+
+    <!-- Proximity speaker delay values. -->
+    <string-array name="proximity_delay_values" translatable="false">
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+    </string-array>
 </resources>

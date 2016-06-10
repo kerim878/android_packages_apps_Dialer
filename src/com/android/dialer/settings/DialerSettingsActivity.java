@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.PowerManager;
 import android.os.Process;
 import android.os.UserManager;
 import android.preference.PreferenceActivity;
@@ -64,6 +65,13 @@ public class DialerSettingsActivity extends PreferenceActivity {
         lookupSettingsHeader.summaryRes = R.string.lookup_settings_description;
         lookupSettingsHeader.fragment = LookupSettingsFragment.class.getName();
         target.add(lookupSettingsHeader);
+
+        if (isSpeakerAllowed()) {
+            final Header speakerSettingsHeader = new Header();
+            speakerSettingsHeader.titleRes = R.string.speaker_settings_label;
+            speakerSettingsHeader.fragment = SpeakerSettingsFragment.class.getName();
+            target.add(speakerSettingsHeader);
+        }
 
         // Only show call setting menus if the current user is the primary/owner user.
         if (isPrimaryUser()) {
@@ -137,5 +145,14 @@ public class DialerSettingsActivity extends PreferenceActivity {
     private boolean isPrimaryUser() {
         final UserManager userManager = (UserManager) getSystemService(Context.USER_SERVICE);
         return userManager.isSystemUser();
+    }
+
+    /**
+     * @return Whether proximity speakerphone is allowed
+     */
+    private boolean isSpeakerAllowed() {
+        PowerManager pm = (PowerManager) this.getSystemService(Context.POWER_SERVICE);
+        return pm.isWakeLockLevelSupported(PowerManager.PROXIMITY_SCREEN_OFF_WAKE_LOCK)
+		    && getResources().getBoolean(R.bool.config_enabled_speakerprox);
     }
 }
